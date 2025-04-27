@@ -14,3 +14,9 @@ if [[ "$1" == "--logs" ]]; then
         echo "Data: $(date)" >> "log${i}.txt"
     done
 fi
+if [[ "$1" == "--help" ]]; then
+    echo "Dostępne komendy:"
+    echo "--date"
+    echo "--logs [liczba_logow]"
+    echo "--help"
+fi
