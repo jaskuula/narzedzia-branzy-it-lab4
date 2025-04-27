@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$1"== "--logs" ]]; then
+if [[ "$1" == "--logs" ]]; then
     num=${2:-100}
     for ((i=1; i<=num; i++)); do
         echo "Nazwa pliku: log${i}.txt" > "log${i}.txt"
