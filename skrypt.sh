@@ -20,3 +20,15 @@ if [[ "$1" == "--help" ]]; then
     echo "--logs [liczba_logow]"
     echo "--help"
 fi
+
+if [[ "$1" == "--error" || "$1" == "-e" ]]; then
+    num=${2:-100}
+    if [[ -n "$2" && "$2" =~ ^[0-9]+$ ]]; then
+        num=$2
+    fi
+    for ((i=1; i<=num; i++)); do
+        echo "Nazwa pliku: error${i}.txt" > "error${i}.txt"
+        echo "Nazwa skryptu: $0" >> "error${i}.txt"
+        echo "Data: $(date)" >> "error${i}.txt"
+    done
+fi
