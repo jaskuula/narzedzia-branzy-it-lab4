@@ -20,3 +20,10 @@ if [[ "$1" == "--help" ]]; then
     echo "--logs [liczba_logow]"
     echo "--help"
 fi
+
+if [[ "$1" == "--init" ]]; then
+    git clone "https://github.com/jaskuula/narzedzia-branzy-it-lab4"
+    repo_name=$(basename "https://github.com/jaskuula/narzedzia-branzy-it-lab4" .git)
+    export PATH=$PATH:$(pwd)/$repo_name
+    echo "Sklonowano repozytorium i dodano do PATH"
+fi
