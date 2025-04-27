@@ -16,7 +16,7 @@ if [[ "$1" == "--logs" ]]; then
 fi
 if [[ "$1" == "--help" ]]; then
     echo "Dostępne komendy:"
-    echo "--date"
-    echo "--logs [liczba_logow]"
-    echo "--help"
+    echo "--date, -d"
+    echo "--logs [liczba_logow], -l [liczba_logow]"
+    echo "--help, -h"
 fi
