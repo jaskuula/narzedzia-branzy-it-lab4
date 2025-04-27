@@ -16,9 +16,11 @@ if [[ "$1" == "--logs" || "$1" == "-l" ]]; then
 fi
 if [[ "$1" == "--help" || "$1" == "-h" ]]; then
     echo "Dostępne komendy:"
-    echo "--date, -d"
-    echo "--logs [liczba_logow], -l [liczba_logow]"
-    echo "--help, -h"
+    echo "--date, -d Wyświetla dzisiejszą datę"
+    echo "--logs [liczba_logow], -l [liczba_logow] Tworzy n plików log"
+    echo "--error [liczba_errorow], -e [liczba_errorow] Tworzy n plików error"
+    echo "--init Klonuje repo i ustawia PATH"
+    echo "--help, -h Wyświetla dostępne opcje"
 fi
 
 if [[ "$1" == "--init" ]]; then
