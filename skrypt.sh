@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$1"== "--logs" ]]; then
+if [[ "$1" == "--logs" ]]; then
     num=${2:-100}
     if [[ -n "$2" && "$2" =~ ^[0-9]+$ ]]; then
         num=$2
